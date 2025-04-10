@@ -13,7 +13,7 @@ class params(BaseModel):
     return_distance:bool=False
 
 class PredictionIn(BaseModel):
-    #  nutrition_input: List[conlist(item_type=float, min_length=9, max_length=9)]
+    #  nutrition_input: List[conlist(item_type=float, min_length=6, max_length=9)]
     nutrition_input:List[conlist(item_type=float, min_length=9, max_length=9)]
     ingredients:list[str]=[]
     params:Optional[params]
